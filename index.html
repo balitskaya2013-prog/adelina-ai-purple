@@ -20,7 +20,7 @@
   --sky:#1976D2;--sky-bg:#E3F0FB;
   --purple:#7B3FBE;
 }
-body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;min-height:100vh;padding-bottom:0}
+body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;min-height:100vh;padding-bottom:0;display:flex;flex-direction:column}
 .header{background:var(--orange);padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:64px}
 .header-name{font-family:'Roboto Condensed',sans-serif;font-size:18px;font-weight:900;color:#fff}
 .header-team{font-size:11px;color:rgba(255,255,255,.7);margin-top:2px}
@@ -33,7 +33,7 @@ nav#section-nav{display:flex;gap:4px;background:rgba(0,0,0,.15);border-radius:10
 .section-tab.active .section-tab-num{color:var(--orange)}
 .section-tab-label{font-size:12px;font-weight:600;color:rgba(255,255,255,.85);white-space:nowrap}
 .section-tab.active .section-tab-label{color:var(--text)}
-.section-body{display:none}.section-body.active{display:block}
+.section-body{display:none}.section-body.active{display:block;flex:1}
 .tabs-wrapper{background:var(--bg);padding:0 40px}
 .tabs{display:flex;gap:0}
 .tab{padding:12px 18px;font-size:13px;font-weight:600;color:var(--text3);cursor:pointer;border-bottom:3px solid transparent;transition:all .15s;white-space:nowrap}
@@ -80,7 +80,7 @@ nav#section-nav{display:flex;gap:4px;background:rgba(0,0,0,.15);border-radius:10
 .placeholder-tag{background:var(--amber-bg);color:var(--amber);font-size:9px;font-weight:700;padding:3px 10px;border-radius:20px}
 .tag{display:inline-flex;font-size:9px;font-weight:700;padding:2px 8px;border-radius:20px;margin-right:4px}
 .tag-rus{background:#E3F0FB;color:#1976D2}.tag-int{background:#F0EBF9;color:#7B3FBE}.tag-host{background:var(--green-bg);color:var(--green)}
-.page-footer{background:var(--bg2);border-top:1px solid var(--border);padding:12px 40px;display:flex;align-items:center;justify-content:space-between;margin-top:0}
+.page-footer{background:var(--bg2);border-top:1px solid var(--border);padding:12px 40px;display:flex;align-items:center;justify-content:space-between;margin-top:auto}
 .footer-logo{font-family:'Roboto Condensed',sans-serif;font-size:15px;font-weight:900;color:var(--orange)}
 .footer-info{font-size:11px;color:var(--text3)}
 #section-talks{padding-bottom:0}#section-talks>div{padding-bottom:0!important}#panel-above-aiblock{padding-bottom:0!important}
