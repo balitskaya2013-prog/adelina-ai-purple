@@ -831,6 +831,30 @@ nav#section-nav{display:flex;gap:4px;background:rgba(0,0,0,.15);border-radius:10
     </div>
   </div>
 
+
+  <!-- 3. AI Delivery Bot -->
+  <div style="text-align:center;margin:8px 0 14px;display:flex;align-items:center;gap:12px">
+    <div style="flex:1;height:1px;background:var(--bg3)"></div>
+    <span style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--text3)">📦 AI Delivery Bot</span>
+    <div style="flex:1;height:1px;background:var(--bg3)"></div>
+  </div>
+  <div class="grid-2" style="margin-bottom:14px">
+    <div class="driver-card" style="border-left-color:var(--purple)">
+      <div class="driver-header"><span class="driver-icon">📦</span><span class="driver-title">AI Delivery Bot · автоматическая сводка топ-метрик доставки</span></div>
+      <p class="driver-body">Бот автоматически отправляет сводку по всем топ-метрикам доставки на ежедневной, недельной и месячной основе. Работает через сервер, без ручной сборки дашбордов.</p>
+      <div style="display:flex;flex-direction:column;gap:5px">
+        <div style="display:flex;gap:7px;align-items:flex-start"><span style="color:var(--purple);font-weight:700;flex-shrink:0">→</span><span style="font-size:11px;color:var(--text2)">Daily / Weekly / Monthly summary по ключевым Delivery KPI</span></div>
+        <div style="display:flex;gap:7px;align-items:flex-start"><span style="color:var(--purple);font-weight:700;flex-shrink:0">→</span><span style="font-size:11px;color:var(--text2)">Работает через сервер: регулярная отправка без участия аналитика</span></div>
+        <div style="display:flex;gap:7px;align-items:flex-start"><span style="color:var(--purple);font-weight:700;flex-shrink:0">→</span><span style="font-size:11px;color:var(--text2)">Реализация: 5 часов работы</span></div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <div class="pill" style="padding:10px 14px"><span class="pill-label">📊 Топ-метрики доставки</span><span class="pill-value" style="color:var(--purple)">daily / weekly / monthly</span></div>
+      <div class="pill" style="padding:10px 14px"><span class="pill-label">🖥️ Запуск через сервер</span><span class="pill-value" style="color:var(--purple)">на регуляре</span></div>
+      <div class="pill" style="padding:10px 14px"><span class="pill-label">🔗 Ссылка</span><span class="pill-value" style="color:var(--text3)">добавим позже</span></div>
+    </div>
+  </div>
+
   <!-- Screenshots removed -->
 
 </div>
@@ -843,6 +867,7 @@ nav#section-nav{display:flex;gap:4px;background:rgba(0,0,0,.15);border-radius:10
   <div class="tabs" id="tabs-ai">
     <div class="tab active" onclick="switchTab('ai','aiacq',this)">🤖 AI Reactivation Bot</div>
     <div class="tab"        onclick="switchTab('ai','aimkt',this)">🧠 AI Marketplace Bot</div>
+    <div class="tab"        onclick="switchTab('ai','delivery',this)">📦 AI Delivery Bot</div>
   </div>
 </div>
 
@@ -982,6 +1007,63 @@ nav#section-nav{display:flex;gap:4px;background:rgba(0,0,0,.15);border-radius:10
     </div>
   </div>
 
+
+
+<!-- PANEL 3: AI Delivery Bot -->
+<div class="panel" id="panel-ai-delivery">
+  <div class="above-badge">⬆ Сверх плана</div>
+
+  <div class="hero" style="margin-bottom:16px;background:var(--purple)">
+    <div>
+      <div class="hero-label">📦 AI Delivery Bot · Delivery KPI summaries</div>
+      <div class="hero-text">Автоматическая сводка по всем топ-метрикам доставки — daily, weekly и monthly.<br><em>Работает через сервер · реализация за 5 часов · ссылка будет добавлена позже</em></div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-val">3</div>
+        <div class="hero-stat-lbl">частоты: day / week / month</div>
+      </div>
+      <div class="hero-divider"></div>
+      <div class="hero-stat">
+        <div class="hero-stat-val">5 ч</div>
+        <div class="hero-stat-lbl">реализация</div>
+      </div>
+      <div class="hero-divider"></div>
+      <div class="hero-stat">
+        <div class="hero-stat-val" style="font-size:14px;line-height:1.3">server<br>run</div>
+        <div class="hero-stat-lbl">без ручной отправки</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-3" style="margin-bottom:16px">
+    <div class="kpi-card">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+        <span style="font-size:18px">📊</span>
+        <div class="kpi-label" style="margin:0">Топ-метрики Delivery</div>
+      </div>
+      <div style="font-size:11px;color:var(--text2);line-height:1.5">Автосбор и отправка сводки по ключевым метрикам доставки: deliveries, GMV, Net Inflow и другим верхнеуровневым KPI.</div>
+    </div>
+    <div class="kpi-card">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+        <span style="font-size:18px">🗓️</span>
+        <div class="kpi-label" style="margin:0">Daily / Weekly / Monthly</div>
+      </div>
+      <div style="font-size:11px;color:var(--text2);line-height:1.5">Одна логика работает на ежедневной, недельной и месячной основе — без ручной подготовки и пересборки отчёта.</div>
+    </div>
+    <div class="kpi-card">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+        <span style="font-size:18px">🔗</span>
+        <div class="kpi-label" style="margin:0">Ссылка</div>
+      </div>
+      <div style="font-size:11px;color:var(--text2);line-height:1.5">Здесь будет ссылка на бота / канал / артефакт после добавления.</div>
+      <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;background:var(--bg3);border-radius:8px;padding:6px 10px">
+        <span style="font-size:10px;color:var(--text3)">Статус</span>
+        <span style="font-size:11px;font-weight:700;color:var(--purple)">ссылка позже</span>
+      </div>
+    </div>
+  </div>
+</div>
 
 </div>
 
